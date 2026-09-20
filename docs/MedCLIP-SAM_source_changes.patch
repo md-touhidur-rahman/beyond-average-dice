@@ -1,0 +1,48 @@
+diff --git a/saliency_maps/visualize_cam.py b/saliency_maps/visualize_cam.py
+index 9b000d6..bbb29e6 100644
+--- a/saliency_maps/visualize_cam.py
++++ b/saliency_maps/visualize_cam.py
+@@ -96,12 +96,39 @@ class CLIPIntereactiveCAM:
+                     print(i,p.size())
+         
+         elif(args.model_domain == "biomedclip"):
+-            _, _, _, cam_trans, clip = load_clip(self.clip_version, resize=self.resize, custom=self.custom_clip)
+-            biomedclip_model, self.preprocess = create_model_from_pretrained('hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224')
+-            tokenizer = get_tokenizer('hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224')
++            # Exact transform path used by the official MedCLIP-SAM v1 code.
++            # Exact v1 BiomedCLIP reshape
++            def cam_trans(tensor, height=None, width=None):
++                if height or width is None:
++                    grid_square = len(tensor) - 1
++                    if grid_square ** 0.5 % 1 == 0:
++                        height = width = int(grid_square ** 0.5)
++                    else:
++                        raise ValueError("Heatmap is not square, please set height and width.")
++                result = tensor[1:, :, :].reshape(
++                    height, width, tensor.size(2)
++                )
++                result = result.permute(2, 0, 1)
++                return result.unsqueeze(0)
++            clip = None
++
++            biomedclip_model, self.preprocess = create_model_from_pretrained(
++                'hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224'
++            )
++
++            if self.checkpoint is not None:
++                print(f"Loading fine-tuned BiomedCLIP checkpoint: {self.checkpoint}")
++                state_dict = torch.load(self.checkpoint, map_location='cpu')
++                biomedclip_model.load_state_dict(state_dict, strict=True)
++                print("Fine-tuned BiomedCLIP checkpoint loaded successfully.")
++
++            tokenizer = get_tokenizer(
++                'hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224'
++            )
++
+             clip_model = BiomedCLIP(biomedclip_model)
+             target_layer = clip_model.model.visual.trunk.blocks[11].norm2
+-            
++
+         cam_versions = self.cam_version.split(',')
+         self.cam = []
+ 
