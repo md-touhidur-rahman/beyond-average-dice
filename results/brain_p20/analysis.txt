@@ -1,0 +1,67 @@
+Cases: 400
+Patients: 174
+
+=== PROMPT MEAN DICE ===
+P01: 0.443153576
+P02: 0.426522916
+P03: 0.451256813
+P04: 0.314083918
+P05: 0.424307346
+P06: 0.456344786
+P07: 0.407836916
+P08: 0.436601824
+P09: 0.451397277
+P10: 0.454299714
+P11: 0.438063401
+P12: 0.429517377
+P13: 0.444684071
+P14: 0.476014024
+P15: 0.292419401
+P16: 0.428015074
+P17: 0.354206922
+P18: 0.453342010
+P19: 0.331817596
+P20: 0.453513441
+
+Best fixed prompt: P14
+Best fixed Dice: 0.476014024
+Prompt oracle Dice: 0.564146509
+Oracle - best fixed: 0.088132485
+
+=== CASE-LEVEL SENSITIVITY ===
+Mean pairwise |Dice difference|: 0.111660177
+Median pairwise |Dice difference|: 0.075342876
+Mean within-case range: 0.385860607
+Median within-case range: 0.290862032
+Maximum within-case range: 0.972625513
+
+=== RANGE THRESHOLDS ===
+range > 0.01: 310/400 = 77.5000%
+range > 0.05: 284/400 = 71.0000%
+range > 0.10: 260/400 = 65.0000%
+range > 0.20: 229/400 = 57.2500%
+range > 0.30: 195/400 = 48.7500%
+range > 0.50: 162/400 = 40.5000%
+
+Bootstrap patients: 174
+
+=== PATIENT-CLUSTER BOOTSTRAP 95% CI ===
+Mean pairwise abs: 0.111660177 [0.098059708, 0.125045531]
+Mean range: 0.385860607 [0.345674955, 0.426065003]
+Best fixed: 0.476014024 [0.429599599, 0.521242287]
+Oracle: 0.564146509 [0.517317840, 0.609582514]
+Oracle gap: 0.088132485 [0.071647682, 0.105346473]
+
+=== THRESHOLD 95% CI ===
+range > 0.01: 77.5000% [72.2922%, 82.2324%]
+range > 0.05: 71.0000% [65.7289%, 76.1538%]
+range > 0.10: 65.0000% [59.5855%, 70.2235%]
+range > 0.20: 57.2500% [51.9582%, 62.4413%]
+range > 0.30: 48.7500% [43.1634%, 54.2411%]
+range > 0.50: 40.5000% [35.1010%, 46.0432%]
+
+Saved:
+part2/brain400_p20_controlled/brain400_p20_case_metrics.csv
+part2/brain400_p20_controlled/brain400_p20_summary.csv
+
+ANALYSIS COMPLETE

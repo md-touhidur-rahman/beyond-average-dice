@@ -1,0 +1,10 @@
+DATE:
+Sun Sep 20 07:30:21 PM CEST 2026
+
+HOST:
+tinyx
+
+SLURM:
+slurm 25.11.2
+
+NVIDIA:

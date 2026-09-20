@@ -1,0 +1,155 @@
+===== MedCLIP-SAM =====
+origin	https://github.com/HealthX-Lab/MedCLIP-SAM.git (fetch)
+origin	https://github.com/HealthX-Lab/MedCLIP-SAM.git (push)
+7c51122914718cf6d0f5172530ee0d5aa23e6d3c
+ M saliency_maps/visualize_cam.py
+ M segment-anything/segment_anything.egg-info/SOURCES.txt
+ M segment-anything/segment_anything/__pycache__/__init__.cpython-39.pyc
+ M segment-anything/segment_anything/__pycache__/automatic_mask_generator.cpython-39.pyc
+ M segment-anything/segment_anything/__pycache__/build_sam.cpython-39.pyc
+ M segment-anything/segment_anything/__pycache__/predictor.cpython-39.pyc
+ M segment-anything/segment_anything/modeling/__pycache__/__init__.cpython-39.pyc
+ M segment-anything/segment_anything/modeling/__pycache__/common.cpython-39.pyc
+ M segment-anything/segment_anything/modeling/__pycache__/image_encoder.cpython-39.pyc
+ M segment-anything/segment_anything/modeling/__pycache__/mask_decoder.cpython-39.pyc
+ M segment-anything/segment_anything/modeling/__pycache__/prompt_encoder.cpython-39.pyc
+ M segment-anything/segment_anything/modeling/__pycache__/sam.cpython-39.pyc
+ M segment-anything/segment_anything/modeling/__pycache__/transformer.cpython-39.pyc
+ M segment-anything/segment_anything/utils/__pycache__/__init__.cpython-39.pyc
+ M segment-anything/segment_anything/utils/__pycache__/amg.cpython-39.pyc
+ M segment-anything/segment_anything/utils/__pycache__/transforms.cpython-39.pyc
+?? 0.01.
+?? 0.10
+?? 0.20.
+?? 0.30.
+?? 0.50.
+?? HANDOFF.md
+?? PRL_MedCLIPSAM_Reproduction_Code.zip
+?? PRL_MedCLIPSAM_Reproduction_Code/
+?? authors_checkpoint_conversion.log
+?? brain400_authors_gscorecam_paper.sbatch
+?? brain400_authors_gscorecam_paper_1813405.err
+?? brain400_authors_gscorecam_paper_1813405.out
+?? brain400_resume_1813406.err
+?? brain400_resume_1813406.out
+?? brain400_resume_crf_sam.sbatch
+?? brain_p20_ctrl_1817047.out
+?? breast113_authors_gscorecam.sbatch
+?? breast113_authors_gscorecam_1813397.err
+?? breast113_authors_gscorecam_1813397.out
+?? breast113_authors_gscorecam_1813398.err
+?? breast113_authors_gscorecam_1813398.out
+?? breast113_authors_gscorecam_1813399.err
+?? breast113_authors_gscorecam_1813399.out
+?? breast113_authors_gscorecam_1813400.err
+?? breast113_authors_gscorecam_1813400.out
+?? breast113_authors_gscorecam_1813404.err
+?? breast113_authors_gscorecam_v1exact.sbatch
+?? breast98_authors_gscorecam_paper.sbatch
+?? breast98_authors_gscorecam_paper_1813404.out
+?? breast_p20_1817018.out
+?? breast_p20_ctrl_1817044.out
+?? cam65fix_1814173.out
+?? cam65fix_1814176.out
+?? cam65fix_1814179.out
+?? cam65top300_1814196.out
+?? cam65trans_1814180.out
+?? cam_box_sam_1813408.out
+?? cam_box_sam_final.sbatch
+?? checkpoints/
+?? data/
+?? p01_debug_1817042.out
+?? p20_order_1817043.out
+?? part1_ALL_FIGURES_FINAL.zip
+?? part1_all_qualitative_figures.zip
+?? part1_figures.zip
+?? part1_figures/
+?? part1_qualitative_figures/
+?? part2/
+?? reproduction/
+?? results/
+?? saliency_maps/finetuned_hf_model/
+?? saliency_maps/pytorch_grad_cam/base_cam.py.postpaper_backup
+?? saliency_maps/pytorch_grad_cam/gscore_cam.py.before_maskfix
+?? saliency_maps/pytorch_grad_cam/gscore_cam.py.before_scorecheck
+?? saliency_maps/pytorch_grad_cam/gscore_cam.py.pre_top60fix
+?? saliency_maps/visualize_cam.py.before_oldckpt
+?? saliency_maps/visualize_cam_promptval.py
+?? sam65top300_1814212.out
+?? segment-anything/prompt_sam.py.v1_original
+?? wrap.o1813427
+?? wrap.o1813428
+?? wrap.o1813429
+?? wrap.o1813437
+?? wrap.o1814152
+
+===== MedCLIP-SAMv2 =====
+origin	https://github.com/HealthX-Lab/MedCLIP-SAMv2.git (fetch)
+origin	https://github.com/HealthX-Lab/MedCLIP-SAMv2.git (push)
+07047e3f51e7f112cfeb490698ca60a1867295f2
+ M biomedclip_finetuning/open_clip/src/open_clip/loss.py
+ M biomedclip_finetuning/open_clip/src/open_clip_train/precision.py
+ M postprocessing/postprocess_saliency_maps.py
+ M saliency_maps/generate_saliency_maps.py
+ M segment-anything/segment_anything/build_sam.py
+?? biomedclip_finetuning/open_clip/src/open_clip/loss.py.before_dhnnce_fix
+?? biomedclip_finetuning/open_clip/src/open_clip_train/precision.py.bak
+?? breast_sam_eval_1813394.err
+?? breast_sam_eval_1813394.out
+?? breast_sam_eval_1813395.err
+?? breast_sam_eval_1813395.out
+?? continue_official_breast.sbatch
+?? evaluation/__pycache__/
+?? finish_sam_breast.sbatch
+?? official_breast_1813376.err
+?? official_breast_1813376.out
+?? official_breast_1813378.err
+?? official_breast_1813378.out
+?? official_breast_1813383.err
+?? official_breast_1813383.out
+?? official_breast_1813384.err
+?? official_breast_1813384.out
+?? official_breast_1813385.err
+?? official_breast_1813385.out
+?? official_breast_1813386.err
+?? official_breast_1813386.out
+?? official_breast_1813387.err
+?? official_breast_1813387.out
+?? official_breast_finish_1813393.err
+?? official_breast_finish_1813393.out
+?? parent_repro_brain600/
+?? results_official/
+?? run_official_breast.sbatch
+?? saliency_maps/__pycache__/
+?? saliency_maps/generate_saliency_maps.py.AUTHORS_ORIGINAL
+?? saliency_maps/model/pytorch_model.bin
+?? saliency_maps/scripts/__pycache__/
+?? segment-anything/sam_checkpoints/
+?? segment-anything/segment_anything/__pycache__/
+?? segment-anything/segment_anything/build_sam.py.AUTHORS_ORIGINAL
+?? segment-anything/segment_anything/modeling/__pycache__/
+?? segment-anything/segment_anything/utils/__pycache__/
+?? train_biomedclip_authors_recipe_a100.sbatch
+?? train_biomedclip_v1_dhnfix_a100.sbatch
+?? train_biomedclip_v1_repro.sbatch
+
+===== Text3DSAM =====
+origin	https://github.com/mirthAI/Text3DSAM.git (fetch)
+origin	https://github.com/mirthAI/Text3DSAM.git (push)
+4eb36d3f11c17ff88ca26fed4b2927a05c15afb1
+?? checkpoints/
+?? data/
+?? finalize_text3dsam.py
+?? part2/
+?? run_amos30_language_sensitivity.py
+?? smoke_text3dsam_amos.py
+?? src/model/__pycache__/
+?? src/model/segmentation/__pycache__/
+?? text3dsam_amos30_1816935.out
+?? text3dsam_amos30_1816945.out
+?? text3dsam_amos30_1816946.out
+?? text3dsam_smoke2_1816926.out
+?? text3dsam_smoke_1816917.out
+?? text3dsam_verify_1816954.out
+?? text3dsam_verify_1817006.out
+?? verify_text3dsam_decoder.py

@@ -1,0 +1,48 @@
+Pair observations: 76000
+
+=== OVERALL RELATIONSHIP ===
+Pearson corr(box IoU, |Dice diff|): -0.5477064892913228
+Spearman corr(box IoU, |Dice diff|): -0.3963634003100169
+
+=== DICE DIVERGENCE BY BOX SIMILARITY ===
+boxIoU < .10: n=12002 mean|dDice|=0.3340 median=0.1122 P(|dDice|>.10)=0.505 P(|dDice|>.20)=0.471 P(|dDice|>.50)=0.378
+boxIoU < .25: n=13903 mean|dDice|=0.3332 median=0.1524 P(|dDice|>.10)=0.531 P(|dDice|>.20)=0.487 P(|dDice|>.50)=0.366
+boxIoU < .50: n=20763 mean|dDice|=0.2981 median=0.1524 P(|dDice|>.10)=0.552 P(|dDice|>.20)=0.472 P(|dDice|>.50)=0.297
+boxIoU >= .50: n=55237 mean|dDice|=0.0416 median=0.0037 P(|dDice|>.10)=0.114 P(|dDice|>.20)=0.059 P(|dDice|>.50)=0.012
+boxIoU >= .75: n=42583 mean|dDice|=0.0245 median=0.0023 P(|dDice|>.10)=0.056 P(|dDice|>.20)=0.027 P(|dDice|>.50)=0.005
+boxIoU >= .90: n=20570 mean|dDice|=0.0114 median=0.0006 P(|dDice|>.10)=0.018 P(|dDice|>.20)=0.011 P(|dDice|>.50)=0.002
+
+=== BOX IoU BY DICE DIVERGENCE ===
+|dDice|>0.01: n=35448 mean boxIoU=0.5444 median=0.6580 P(boxIoU<.10)=0.200 P(boxIoU<.25)=0.244 P(boxIoU<.50)=0.387
+|dDice|>0.05: n=23136 mean boxIoU=0.4308 median=0.4590 P(boxIoU<.10)=0.277 P(boxIoU<.25)=0.338 P(boxIoU<.50)=0.534
+|dDice|>0.10: n=17747 mean boxIoU=0.3527 median=0.3488 P(boxIoU<.10)=0.342 P(boxIoU<.25)=0.416 P(boxIoU<.50)=0.646
+|dDice|>0.20: n=13076 mean boxIoU=0.2775 median=0.2237 P(boxIoU<.10)=0.432 P(boxIoU<.25)=0.518 P(boxIoU<.50)=0.750
+|dDice|>0.50: n=6843 mean boxIoU=0.1398 median=0.0000 P(boxIoU<.10)=0.663 P(boxIoU<.25)=0.743 P(boxIoU<.50)=0.900
+
+=== CATASTROPHIC FAILURE/SUCCESS PAIRS ===
+N: 5398
+Fraction of all pairs: 0.07102631578947369
+Mean box IoU: 0.07375613144678098
+Median box IoU: 0.0
+boxIoU < .10: 0.8373471656168952
+boxIoU < .25: 0.8842163764357169
+boxIoU < .50: 0.9425713227121156
+boxIoU >= .75: 0.02223045572434235
+
+=== P14 vs P15 LOCALIZATION ===
+N: 400
+Mean box IoU: 0.3914159740634425
+Median box IoU: 0.3860796122335367
+|dDice|>0.10: n=176, mean boxIoU=0.2416, median=0.1750, P(boxIoU<.25)=0.551
+|dDice|>0.20: n=150, mean boxIoU=0.2094, median=0.1371, P(boxIoU<.25)=0.600
+|dDice|>0.50: n=91, mean boxIoU=0.1049, median=0.0000, P(boxIoU<.25)=0.813
+
+=== COUNTEREXAMPLE CHECK ===
+boxIoU >= .90 AND |dDice| > .20: 224
+Fraction of all pairs: 0.0029473684210526317
+
+Saved:
+part2/brain400_p20_controlled/brain400_p20_pairwise_localization.csv
+part2/brain400_p20_controlled/brain400_p20_localization_counterexamples.csv
+
+LOCALIZATION ANALYSIS COMPLETE
