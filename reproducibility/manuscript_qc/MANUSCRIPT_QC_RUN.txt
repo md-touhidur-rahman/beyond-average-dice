@@ -1,0 +1,142 @@
+PASS | Brain400           | N cases                                | 400
+PASS | Brain400           | mean pairwise |dDice|                  | 0.1116601771178113
+PASS | Brain400           | mean within-case range                 | 0.3858606072095203
+PASS | Brain400           | median within-case range               | 0.29086203187897
+PASS | Brain400           | max within-case range                  | 0.9726255125789648
+PASS | Brain400           | best fixed prompt                      | P14
+PASS | Brain400           | best fixed Dice                        | 0.4760140243472509
+PASS | Brain400           | oracle Dice                            | 0.5641465091707494
+PASS | Brain400           | oracle advantage                       | 0.0881324848234985
+PASS | Brain400           | unique patients                        | 174
+PASS | Brain400           | pairwise CI low                        | 0.09805970752632172
+PASS | Brain400           | pairwise CI high                       | 0.12504553127580373
+PASS | Brain400           | range CI low                           | 0.34567495490510997
+PASS | Brain400           | range CI high                          | 0.42606500295821154
+PASS | Brain400           | best fixed CI low                      | 0.42959959930584196
+PASS | Brain400           | best fixed CI high                     | 0.521242287267306
+PASS | Brain400           | oracle CI low                          | 0.5173178404038608
+PASS | Brain400           | oracle CI high                         | 0.6095825139634747
+PASS | Brain400           | oracle advantage CI low                | 0.07164768214921538
+PASS | Brain400           | oracle advantage CI high               | 0.10534647267708994
+PASS | B400 funnel        | all pairs                              | 76000
+PASS | B400 funnel        | all images                             | 400
+PASS | B400 funnel        | all patients                           | 174
+PASS | B400 funnel        | general residual pairs                 | 224
+PASS | B400 funnel        | general residual images                | 31
+PASS | B400 funnel        | general residual patients              | 27
+PASS | B400 funnel        | catastrophic pairs from 76k            | 5398
+PASS | B400 funnel        | stored catastrophic pairs              | 5398
+PASS | B400 funnel        | catastrophic images                    | 132
+PASS | B400 funnel        | catastrophic patients                  | 88
+PASS | B400 funnel        | fraction box IoU < .10                 | 0.8373471656168952
+PASS | B400 funnel        | fraction box IoU < .25                 | 0.8842163764357169
+PASS | B400 funnel        | fraction box IoU < .50                 | 0.9425713227121156
+PASS | B400 funnel        | catastrophic high-IoU pairs            | 25
+PASS | B400 funnel        | catastrophic high-IoU images           | 6
+PASS | B400 funnel        | catastrophic high-IoU patients         | 6
+PASS | Residual224        | N pairs                                | 224
+PASS | Residual224        | mean selected |dDice|                  | 0.36089608784447236
+PASS | Residual224        | mean oracle |dDice|                    | 0.07322079956527994
+PASS | Residual224        | different selected candidate           | 0.875
+PASS | Residual224        | any selection loss > .20               | 0.9241071428571429
+PASS | Residual224        | selection dominant                     | 0.9196428571428571
+PASS | CatHigh25          | mean selected |dDice|                  | 0.6797010936244567
+PASS | CatHigh25          | mean oracle |dDice|                    | 0.13028224211083467
+PASS | CatHigh25          | different selected candidate           | 0.96
+PASS | CatHigh25          | failure oracle candidate >= .50        | 0.88
+PASS | CatHigh25          | failure selection gap > .20            | 1.0
+PASS | Breast97           | N                                      | 97
+PASS | Breast97           | mean pairwise |dDice|                  | 0.104712673258131
+PASS | Breast97           | mean range                             | 0.3405581937139085
+PASS | Breast97           | best fixed prompt                      | P13
+PASS | Breast97           | best fixed Dice                        | 0.4996685431090214
+PASS | Breast97           | oracle Dice                            | 0.603951312529081
+PASS | Breast97           | oracle advantage                       | 0.10428276942005954
+PASS | Breast97           | pairwise CI low                        | 0.08090683307079181
+PASS | Breast97           | pairwise CI high                       | 0.13015299168350938
+PASS | Breast97           | range CI low                           | 0.2725314230800796
+PASS | Breast97           | range CI high                          | 0.4110409927540524
+PASS | Breast97           | oracle advantage CI low                | 0.060423386189957656
+PASS | Breast97           | oracle advantage CI high               | 0.13528002338841963
+PASS | Brain600           | N                                      | 600
+PASS | Brain600           | mean range                             | 0.13287157388618434
+PASS | Brain600           | median range                           | 0.03675059774328643
+PASS | Brain600           | max range                              | 0.9771276689595089
+PASS | Brain600           | best fixed condition                   | H0
+PASS | Brain600           | best fixed Dice                        | 0.7538302084084627
+PASS | Brain600           | oracle Dice                            | 0.7928471271262357
+PASS | Brain600           | oracle advantage                       | 0.03901691871777302
+PASS | Brain600           | fraction range > 0.01                  | 0.675
+PASS | Brain600           | fraction range > 0.05                  | 0.4483333333333333
+PASS | Brain600           | fraction range > 0.1                   | 0.33166666666666667
+PASS | Brain600           | fraction range > 0.2                   | 0.20333333333333334
+PASS | Brain600           | fraction range > 0.3                   | 0.13833333333333334
+PASS | Brain600           | fraction range > 0.5                   | 0.08
+PASS | Brain600           | H1 mean abs dDice                      | 0.02029625489549853
+PASS | Brain600           | H1 mean signed dDice                   | -0.0025043573933253935
+PASS | Brain600           | H1 |dDice| > 0.1                       | 0.041666666666666664
+PASS | Brain600           | H1 |dDice| > 0.2                       | 0.025
+PASS | Brain600           | H1 |dDice| > 0.5                       | 0.006666666666666667
+PASS | Brain600           | H2 mean abs dDice                      | 0.029997069468885803
+PASS | Brain600           | H2 mean signed dDice                   | -0.00656800354063526
+PASS | Brain600           | H2 |dDice| > 0.1                       | 0.07166666666666667
+PASS | Brain600           | H2 |dDice| > 0.2                       | 0.03833333333333333
+PASS | Brain600           | H2 |dDice| > 0.5                       | 0.011666666666666667
+PASS | Brain600           | L3 mean abs dDice                      | 0.033595670824982396
+PASS | Brain600           | L3 mean signed dDice                   | -0.012857630766527198
+PASS | Brain600           | L3 |dDice| > 0.1                       | 0.075
+PASS | Brain600           | L3 |dDice| > 0.2                       | 0.03833333333333333
+PASS | Brain600           | L3 |dDice| > 0.5                       | 0.016666666666666666
+PASS | Brain600           | L4 mean abs dDice                      | 0.08011079529930272
+PASS | Brain600           | L4 mean signed dDice                   | -0.030899458884001613
+PASS | Brain600           | L4 |dDice| > 0.1                       | 0.19166666666666668
+PASS | Brain600           | L4 |dDice| > 0.2                       | 0.11833333333333333
+PASS | Brain600           | L4 |dDice| > 0.5                       | 0.041666666666666664
+PASS | Brain600           | L5 mean abs dDice                      | 0.07243626524738853
+PASS | Brain600           | L5 mean signed dDice                   | -0.03877681466269454
+PASS | Brain600           | L5 |dDice| > 0.1                       | 0.17333333333333334
+PASS | Brain600           | L5 |dDice| > 0.2                       | 0.10166666666666667
+PASS | Brain600           | L5 |dDice| > 0.5                       | 0.041666666666666664
+PASS | Brain600           | mean_range_H0_L5 CI low                | 0.11623708545331232
+PASS | Brain600           | mean_range_H0_L5 CI high               | 0.15026810150843473
+PASS | Brain600           | oracle_mean_H0_L5 CI low               | 0.778751760046207
+PASS | Brain600           | oracle_mean_H0_L5 CI high              | 0.806525446466093
+PASS | Brain600           | best_fixed_mean_H0_L5 CI low           | 0.7376269145256413
+PASS | Brain600           | best_fixed_mean_H0_L5 CI high          | 0.7704813506890118
+PASS | Brain600           | oracle_advantage_H0_L5 CI low          | 0.03022508286043249
+PASS | Brain600           | oracle_advantage_H0_L5 CI high         | 0.0473721937030366
+PASS | Brain600           | H1 mean abs CI low                     | 0.014245943926158513
+PASS | Brain600           | H1 mean abs CI high                    | 0.027275161993274587
+PASS | Brain600           | H2 mean abs CI low                     | 0.022890158612480102
+PASS | Brain600           | H2 mean abs CI high                    | 0.03799595225975965
+PASS | Brain600           | L3 mean abs CI low                     | 0.02545699583475498
+PASS | Brain600           | L3 mean abs CI high                    | 0.04259531207468672
+PASS | Brain600           | L4 mean abs CI low                     | 0.06681455051508013
+PASS | Brain600           | L4 mean abs CI high                    | 0.09385869830237803
+PASS | Brain600           | L5 mean abs CI low                     | 0.05992883626477147
+PASS | Brain600           | L5 mean abs CI high                    | 0.08578369363527924
+PASS | Text3DSAM          | N                                      | 30
+PASS | Text3DSAM          | P0 mean                                | 0.9143601532149855
+PASS | Text3DSAM          | P1 mean                                | 0.914254800843331
+PASS | Text3DSAM          | P2 mean                                | 0.91443153637837
+PASS | Text3DSAM          | P3 mean                                | 0.9143140239114884
+PASS | Text3DSAM          | mean range                             | 0.0003896201770475671
+PASS | Text3DSAM          | max range                              | 0.001216739856033433
+PASS | Text3DSAM          | fraction range > .01                   | 0.0
+PASS | Text3DSAM          | oracle advantage                       | 9.30098009197522e-05
+
+========================================================================
+FINAL MANUSCRIPT QC
+========================================================================
+TOTAL: 126
+PASS : 126
+FAIL : 0
+
+BRAIN400 FUNNEL
+                                               population  n_pairs  n_images  n_patients                                          key_finding
+                      Complete Brain400 pairwise universe    76000       400         174                Localization-segmentation association
+General high-overlap residual: IoU>=0.90 and |dDice|>0.20      224        31          27 Material disagreement despite preserved localization
+        Catastrophic failure-success: Dice<0.10 vs >=0.50     5398       132          88                             94.26% have box IoU<0.50
+                     Catastrophic high-overlap: IoU>=0.90       25         6           6    Rare residual with candidate-selection signatures
+
+ALL CHECKS PASSED.

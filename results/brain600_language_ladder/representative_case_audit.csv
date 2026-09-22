@@ -1,0 +1,31 @@
+case,condition,dice,box,box_iou_vs_H0,prompt
+457,H0,0.0074202496532593,"(172, 148, 405, 269)",1.0,"A brain imaging study showing a sharply circumscribed, dural-based mass potentially indicating a meningioma tumor."
+457,H1,0.479193632783454,"(172, 144, 405, 269)",0.9682539682539683,"A brain imaging study demonstrating a sharply circumscribed, dural-based mass potentially indicating a meningioma tumor."
+457,H2,0.0063355296502787,"(158, 148, 403, 269)",0.9354838709677419,"A brain MRI demonstrating a sharply circumscribed, dural-based mass potentially indicating a meningioma tumor."
+457,L3,0.0090382098111325,"(154, 144, 403, 269)",0.891633064516129,"Brain MRI demonstrates a sharply circumscribed, dural-based mass potentially indicating a meningioma tumor."
+457,L4,0.9834631986097876,"(208, 142, 393, 265)",0.7398867313915858,"A sharply circumscribed, dural-based mass consistent with a meningioma tumor."
+457,L5,0.8272360369743523,"(208, 170, 325, 263)",0.38853860165335574,A brain MRI showing a meningioma tumor.
+762,H0,0.9526157217200768,"(134, 208, 195, 269)",1.0,"A brain MRI identifying an ill-defined, invasive mass indicative of a glioma tumor."
+762,H1,0.9517279210093252,"(136, 208, 195, 269)",0.967741935483871,"A brain MRI demonstrating an ill-defined, invasive mass indicative of a glioma tumor."
+762,H2,0.9517279210093252,"(136, 208, 195, 269)",0.967741935483871,"A brain MRI demonstrating an ill-defined, invasive mass indicative of a glioma tumor."
+762,L3,0.951098901098901,"(136, 208, 195, 267)",0.9365244536940687,"Brain MRI demonstrates an ill-defined, invasive mass indicative of a glioma tumor."
+762,L4,0.0,"(282, 180, 365, 263)",0.0,"An ill-defined, invasive mass consistent with a glioma tumor."
+762,L5,0.9526157217200768,"(134, 208, 195, 269)",1.0,A brain MRI showing a glioma tumor.
+2816,H0,0.0,"(134, 170, 197, 253)",1.0,"A medical brain MRI scan detecting a diffuse, infiltrative mass suggestive of a glioma tumor."
+2816,H1,0.0,"(136, 172, 195, 245)",0.8258928571428571,"A medical brain MRI scan demonstrating a diffuse, infiltrative mass suggestive of a glioma tumor."
+2816,H2,0.0,"(136, 172, 195, 243)",0.8035714285714286,"A brain MRI demonstrating a diffuse, infiltrative mass suggestive of a glioma tumor."
+2816,L3,0.0,"(136, 172, 195, 245)",0.8258928571428571,"Brain MRI demonstrates a diffuse, infiltrative mass suggestive of a glioma tumor."
+2816,L4,0.0,"(136, 170, 197, 251)",0.9456845238095238,"A diffuse, infiltrative mass consistent with a glioma tumor."
+2816,L5,0.9044666984581148,"(218, 180, 333, 259)",0.0,A brain MRI showing a glioma tumor.
+1401,H0,0.8444546709618039,"(208, 202, 267, 301)",1.0,"A brain imaging study revealing a well-marginated, pituitary mass likely representing a pituitary tumor."
+1401,H1,0.8444546709618039,"(208, 202, 267, 301)",1.0,"A brain imaging study demonstrating a well-marginated, pituitary mass likely representing a pituitary tumor."
+1401,H2,0.0,"(208, 352, 287, 413)",0.0,"A brain MRI demonstrating a well-marginated, pituitary mass likely representing a pituitary tumor."
+1401,L3,0.0,"(208, 352, 287, 415)",0.0,"Brain MRI demonstrates a well-marginated, pituitary mass likely representing a pituitary tumor."
+1401,L4,0.6185111552904794,"(212, 204, 265, 303)",0.8664047151277013,"A well-marginated, pituitary mass consistent with a pituitary tumor."
+1401,L5,0.0,"(208, 352, 291, 415)",0.0,A brain MRI showing a pituitary tumor.
+2982,H0,0.9040152963671128,"(280, 206, 343, 325)",1.0,"A medical brain MRI scan showing an infiltrative, irregularly shaped mass suggestive of a glioma tumor."
+2982,H1,0.0,"(280, 206, 343, 317)",0.9333333333333333,"A medical brain MRI scan demonstrating an infiltrative, irregularly shaped mass suggestive of a glioma tumor."
+2982,H2,0.9321965083231832,"(282, 206, 343, 323)",0.9526041666666667,"A brain MRI demonstrating an infiltrative, irregularly shaped mass suggestive of a glioma tumor."
+2982,L3,0.0,"(280, 206, 343, 307)",0.85,"Brain MRI demonstrates an infiltrative, irregularly shaped mass suggestive of a glioma tumor."
+2982,L4,0.0,"(282, 206, 343, 303)",0.7911458333333333,"An infiltrative, irregularly shaped mass consistent with a glioma tumor."
+2982,L5,0.0,"(282, 206, 341, 301)",0.75,A brain MRI showing a glioma tumor.

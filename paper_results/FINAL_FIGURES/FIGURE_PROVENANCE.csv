@@ -1,0 +1,6 @@
+figure,source,provenance
+Fig1_controlled_language,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/brain600_language_ladder/case_metrics.csv,600 images; raw case Dice; frozen original bootstrap CI
+Fig2_brain600_range_tail,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/brain600_language_ladder/case_metrics.csv,600 images; raw six-condition Dice
+Fig3_catastrophic_localization,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/brain_p20/failure_success_pair_decomposition.csv,5398 catastrophic failure-success prompt pairs
+Fig4_failure_component_decomposition,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/brain_p20/failure_success_pair_decomposition.csv,raw pair point estimates + original frozen patient-cluster CI
+Fig5_brain600_localization_association,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/brain600_language_ladder/case_metrics.csv,3000 H0-relative image-condition observations

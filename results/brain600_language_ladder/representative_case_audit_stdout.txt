@@ -1,0 +1,230 @@
+
+==========================================
+AVAILABLE PROMPT JSON FILES
+==========================================
+MedCLIP-SAMv2/parent_repro_brain600/highop_prompts/H0_original.json
+MedCLIP-SAMv2/parent_repro_brain600/highop_prompts/H1_verb.json
+MedCLIP-SAMv2/parent_repro_brain600/highop_prompts/H2_intro.json
+MedCLIP-SAMv2/parent_repro_brain600/language_ladder_prompts/L3_semantic.json
+MedCLIP-SAMv2/parent_repro_brain600/language_ladder_prompts/L4_concise.json
+MedCLIP-SAMv2/parent_repro_brain600/language_ladder_prompts/L5_broad.json
+MedCLIP-SAMv2/parent_repro_brain600/language_ladder_prompts/manifest.json
+
+==========================================
+RESOLVED PROMPT FILES
+==========================================
+H0 -> MedCLIP-SAMv2/parent_repro_brain600/highop_prompts/H0_original.json
+H1 -> MedCLIP-SAMv2/parent_repro_brain600/highop_prompts/H1_verb.json
+H2 -> MedCLIP-SAMv2/parent_repro_brain600/highop_prompts/H2_intro.json
+L3 -> MedCLIP-SAMv2/parent_repro_brain600/language_ladder_prompts/L3_semantic.json
+L4 -> MedCLIP-SAMv2/parent_repro_brain600/language_ladder_prompts/L4_concise.json
+L5 -> MedCLIP-SAMv2/parent_repro_brain600/language_ladder_prompts/L5_broad.json
+
+==========================================
+CASE AUDIT
+==========================================
+
+------------------------------------------
+CASE 457
+------------------------------------------
+
+H0
+Dice: 0.007420
+Box: (172, 148, 405, 269)
+Box IoU vs H0: 1.000000
+Prompt: A brain imaging study showing a sharply circumscribed, dural-based mass potentially indicating a meningioma tumor.
+
+H1
+Dice: 0.479194
+Box: (172, 144, 405, 269)
+Box IoU vs H0: 0.968254
+Prompt: A brain imaging study demonstrating a sharply circumscribed, dural-based mass potentially indicating a meningioma tumor.
+
+H2
+Dice: 0.006336
+Box: (158, 148, 403, 269)
+Box IoU vs H0: 0.935484
+Prompt: A brain MRI demonstrating a sharply circumscribed, dural-based mass potentially indicating a meningioma tumor.
+
+L3
+Dice: 0.009038
+Box: (154, 144, 403, 269)
+Box IoU vs H0: 0.891633
+Prompt: Brain MRI demonstrates a sharply circumscribed, dural-based mass potentially indicating a meningioma tumor.
+
+L4
+Dice: 0.983463
+Box: (208, 142, 393, 265)
+Box IoU vs H0: 0.739887
+Prompt: A sharply circumscribed, dural-based mass consistent with a meningioma tumor.
+
+L5
+Dice: 0.827236
+Box: (208, 170, 325, 263)
+Box IoU vs H0: 0.388539
+Prompt: A brain MRI showing a meningioma tumor.
+
+------------------------------------------
+CASE 762
+------------------------------------------
+
+H0
+Dice: 0.952616
+Box: (134, 208, 195, 269)
+Box IoU vs H0: 1.000000
+Prompt: A brain MRI identifying an ill-defined, invasive mass indicative of a glioma tumor.
+
+H1
+Dice: 0.951728
+Box: (136, 208, 195, 269)
+Box IoU vs H0: 0.967742
+Prompt: A brain MRI demonstrating an ill-defined, invasive mass indicative of a glioma tumor.
+
+H2
+Dice: 0.951728
+Box: (136, 208, 195, 269)
+Box IoU vs H0: 0.967742
+Prompt: A brain MRI demonstrating an ill-defined, invasive mass indicative of a glioma tumor.
+
+L3
+Dice: 0.951099
+Box: (136, 208, 195, 267)
+Box IoU vs H0: 0.936524
+Prompt: Brain MRI demonstrates an ill-defined, invasive mass indicative of a glioma tumor.
+
+L4
+Dice: 0.000000
+Box: (282, 180, 365, 263)
+Box IoU vs H0: 0.000000
+Prompt: An ill-defined, invasive mass consistent with a glioma tumor.
+
+L5
+Dice: 0.952616
+Box: (134, 208, 195, 269)
+Box IoU vs H0: 1.000000
+Prompt: A brain MRI showing a glioma tumor.
+
+------------------------------------------
+CASE 2816
+------------------------------------------
+
+H0
+Dice: 0.000000
+Box: (134, 170, 197, 253)
+Box IoU vs H0: 1.000000
+Prompt: A medical brain MRI scan detecting a diffuse, infiltrative mass suggestive of a glioma tumor.
+
+H1
+Dice: 0.000000
+Box: (136, 172, 195, 245)
+Box IoU vs H0: 0.825893
+Prompt: A medical brain MRI scan demonstrating a diffuse, infiltrative mass suggestive of a glioma tumor.
+
+H2
+Dice: 0.000000
+Box: (136, 172, 195, 243)
+Box IoU vs H0: 0.803571
+Prompt: A brain MRI demonstrating a diffuse, infiltrative mass suggestive of a glioma tumor.
+
+L3
+Dice: 0.000000
+Box: (136, 172, 195, 245)
+Box IoU vs H0: 0.825893
+Prompt: Brain MRI demonstrates a diffuse, infiltrative mass suggestive of a glioma tumor.
+
+L4
+Dice: 0.000000
+Box: (136, 170, 197, 251)
+Box IoU vs H0: 0.945685
+Prompt: A diffuse, infiltrative mass consistent with a glioma tumor.
+
+L5
+Dice: 0.904467
+Box: (218, 180, 333, 259)
+Box IoU vs H0: 0.000000
+Prompt: A brain MRI showing a glioma tumor.
+
+------------------------------------------
+CASE 1401
+------------------------------------------
+
+H0
+Dice: 0.844455
+Box: (208, 202, 267, 301)
+Box IoU vs H0: 1.000000
+Prompt: A brain imaging study revealing a well-marginated, pituitary mass likely representing a pituitary tumor.
+
+H1
+Dice: 0.844455
+Box: (208, 202, 267, 301)
+Box IoU vs H0: 1.000000
+Prompt: A brain imaging study demonstrating a well-marginated, pituitary mass likely representing a pituitary tumor.
+
+H2
+Dice: 0.000000
+Box: (208, 352, 287, 413)
+Box IoU vs H0: 0.000000
+Prompt: A brain MRI demonstrating a well-marginated, pituitary mass likely representing a pituitary tumor.
+
+L3
+Dice: 0.000000
+Box: (208, 352, 287, 415)
+Box IoU vs H0: 0.000000
+Prompt: Brain MRI demonstrates a well-marginated, pituitary mass likely representing a pituitary tumor.
+
+L4
+Dice: 0.618511
+Box: (212, 204, 265, 303)
+Box IoU vs H0: 0.866405
+Prompt: A well-marginated, pituitary mass consistent with a pituitary tumor.
+
+L5
+Dice: 0.000000
+Box: (208, 352, 291, 415)
+Box IoU vs H0: 0.000000
+Prompt: A brain MRI showing a pituitary tumor.
+
+------------------------------------------
+CASE 2982
+------------------------------------------
+
+H0
+Dice: 0.904015
+Box: (280, 206, 343, 325)
+Box IoU vs H0: 1.000000
+Prompt: A medical brain MRI scan showing an infiltrative, irregularly shaped mass suggestive of a glioma tumor.
+
+H1
+Dice: 0.000000
+Box: (280, 206, 343, 317)
+Box IoU vs H0: 0.933333
+Prompt: A medical brain MRI scan demonstrating an infiltrative, irregularly shaped mass suggestive of a glioma tumor.
+
+H2
+Dice: 0.932197
+Box: (282, 206, 343, 323)
+Box IoU vs H0: 0.952604
+Prompt: A brain MRI demonstrating an infiltrative, irregularly shaped mass suggestive of a glioma tumor.
+
+L3
+Dice: 0.000000
+Box: (280, 206, 343, 307)
+Box IoU vs H0: 0.850000
+Prompt: Brain MRI demonstrates an infiltrative, irregularly shaped mass suggestive of a glioma tumor.
+
+L4
+Dice: 0.000000
+Box: (282, 206, 343, 303)
+Box IoU vs H0: 0.791146
+Prompt: An infiltrative, irregularly shaped mass consistent with a glioma tumor.
+
+L5
+Dice: 0.000000
+Box: (282, 206, 341, 301)
+Box IoU vs H0: 0.750000
+Prompt: A brain MRI showing a glioma tumor.
+
+==========================================
+WROTE
+==========================================
+/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/brain600_language_ladder/representative_case_audit.csv

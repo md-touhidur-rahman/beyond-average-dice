@@ -1,0 +1,7 @@
+figure,source,role
+Fig6_broad_P20_case_sensitivity,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/breast_p20/breast97_p20_case_metrics.csv,raw case-level Breast97 P20 statistics
+Fig6_broad_P20_case_sensitivity,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/brain_p20/brain400_p20_case_metrics.csv,raw case-level Brain400 P20 statistics
+Fig7_fixed_vs_oracle,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/breast_p20/breast97_p20.csv,prompt-wise Breast97 Dice; fixed prompt selected from cohort means
+Fig7_fixed_vs_oracle,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/brain_p20/brain400_p20.csv,prompt-wise Brain400 Dice; fixed prompt selected from cohort means
+Fig7_fixed_vs_oracle,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/brain600_language_ladder/case_metrics.csv,prompt-wise H0-L5 Brain600 Dice
+Fig8_regime_boundary,/home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/results/text3dsam/text3dsam_amos30_liver_language.csv,raw P0-P3 Text3DSAM case Dice

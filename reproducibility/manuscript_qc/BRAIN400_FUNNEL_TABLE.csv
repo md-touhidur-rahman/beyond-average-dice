@@ -1,0 +1,5 @@
+population,n_pairs,n_images,n_patients,key_finding
+Complete Brain400 pairwise universe,76000,400,174,Localization-segmentation association
+General high-overlap residual: IoU>=0.90 and |dDice|>0.20,224,31,27,Material disagreement despite preserved localization
+Catastrophic failure-success: Dice<0.10 vs >=0.50,5398,132,88,94.26% have box IoU<0.50
+Catastrophic high-overlap: IoU>=0.90,25,6,6,Rare residual with candidate-selection signatures
