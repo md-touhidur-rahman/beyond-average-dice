@@ -1,0 +1,223 @@
+EMBEDDING-TRAJECTORY MECHANISM RESULT — PROVENANCE RECORD
+=========================================================
+
+EXPERIMENT
+----------
+Controlled interpolation between projected text representations and
+measurement of resulting M2IB localization displacement.
+
+STATUS
+------
+DECISIVE DEVELOPMENT-ONLY MECHANISM EXPERIMENT COMPLETED.
+
+MECHANISM RUN
+-------------
+Slurm job: 1820110
+State: COMPLETED
+Exit code: 0:0
+Node: tg082
+Elapsed: 01:33:45
+
+DESIGN
+------
+Development cases: 12
+Selected prompt pairs per case: 20
+Matched stochastic seeds: 5
+Interpolation doses:
+    0.00
+    0.25
+    0.50
+    0.75
+    1.00
+
+Total trajectories:
+    12 * 20 * 5 = 1200
+
+Total localization observations:
+    1200 * 5 = 6000
+
+PRIMARY ENDPOINT
+----------------
+For each trajectory:
+
+    D_A(t) =
+        correlation_distance(
+            localization_heatmap(t),
+            localization_heatmap(0)
+        )
+
+Primary trajectory statistic:
+
+    Spearman correlation between interpolation dose t and D_A(t).
+
+This endpoint and its interpretation were frozen before inspection
+of the scientific output.
+
+PRIMARY RESULT
+--------------
+Successfully evaluated:
+    1200 / 1200 trajectories
+
+Mean trajectory-level Spearman rho:
+    0.999250
+
+Median trajectory-level Spearman rho:
+    1.000000
+
+IQR:
+    [1.000000, 1.000000]
+
+Range:
+    [0.900000, 1.000000]
+
+Positive trajectories:
+    1200 / 1200
+    100.000%
+
+Zero trajectories:
+    0 / 1200
+
+Negative trajectories:
+    0 / 1200
+
+Fully non-decreasing trajectories:
+    1191 / 1200
+    99.250%
+
+CASE-LEVEL REPLICATION
+----------------------
+Cases with positive mean primary Spearman:
+    12 / 12
+
+Thus the primary directional result recurred across every
+development case.
+
+SYMMETRIC ENDPOINT-B CHECK
+--------------------------
+Mean trajectory-level Spearman rho:
+    -0.998333
+
+Median:
+    -1.000000
+
+Trajectories in predicted negative direction:
+    1200 / 1200
+    100.000%
+
+Fully non-increasing:
+    1195 / 1200
+    99.583%
+
+Cases with negative mean endpoint-B Spearman:
+    12 / 12
+
+ENDPOINT-PROGRESS CHECK
+-----------------------
+P(t) = D_A(t) / [D_A(t) + D_B(t)]
+
+Fully finite trajectories:
+    1200 / 1200
+
+Mean Spearman:
+    1.000000
+
+Median Spearman:
+    1.000000
+
+Positive:
+    1200 / 1200
+    100.000%
+
+Fully non-decreasing:
+    1200 / 1200
+    100.000%
+
+Cases with positive mean progress Spearman:
+    12 / 12
+
+SECONDARY RAW-HEATMAP MAE
+-------------------------
+Mean Spearman:
+    0.994583
+
+Median:
+    1.000000
+
+Positive:
+    1200 / 1200
+    100.000%
+
+Fully non-decreasing:
+    1150 / 1200
+    95.833%
+
+SECONDARY BOX INSTABILITY
+-------------------------
+Mean Spearman:
+    0.831874
+
+Median:
+    0.948683
+
+Positive:
+    1155 / 1200
+    96.250%
+
+Fully non-decreasing:
+    961 / 1200
+    80.083%
+
+INTERPRETATION UNDER THE FROZEN PLAN
+------------------------------------
+The result satisfies the pre-specified pattern for STRONG SUPPORT:
+
+1. localization distance from endpoint A increases in the predicted
+   direction;
+
+2. the central tendency is strongly positive;
+
+3. the direction recurs across all 12 development cases;
+
+4. localization distance from endpoint B changes in the opposite
+   predicted direction;
+
+5. endpoint progress changes in the predicted direction;
+
+6. the continuous heatmap endpoints show stronger ordering than the
+   downstream discretized bounding-box endpoint.
+
+The experiment supports an ordered mechanistic relationship between
+controlled movement through projected text-representation space and
+M2IB localization displacement.
+
+This result does NOT establish clinical causality and does NOT imply
+that text representation is the sole source of localization
+variability.
+
+INFERENCE / DEPENDENCE
+----------------------
+The 1200 trajectories are nested observations and are NOT treated
+as 1200 independent experimental units for formal inference.
+
+The primary replication level for interpretation is the 12
+development cases.
+
+NON-MONOTONIC OBSERVATIONS
+--------------------------
+All trajectories remain in the analysis.
+
+The 9 / 1200 primary trajectories that were not fully
+non-decreasing were retained.
+
+No trajectory was excluded because of unexpected, weak, or
+non-monotonic behavior.
+
+LEAKAGE / ANALYSIS DECLARATION
+------------------------------
+DEVELOPMENT DIAGNOSTIC ONLY: YES
+GROUND TRUTH USED: NO
+DICE OUTCOMES USED: NO
+HELDOUT OUTCOMES ACCESSED: NO
+METHOD/THRESHOLD TUNING FROM TRAJECTORY OUTCOMES: NO
+RESULT-BASED TRAJECTORY EXCLUSION: NO
+1200 TRAJECTORIES TREATED AS INDEPENDENT FORMAL INFERENCE: NO

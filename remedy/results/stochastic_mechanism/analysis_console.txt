@@ -1,0 +1,59 @@
+=== STOCHASTIC MECHANISM: RAW HEATMAP -> BOX ===
+cases: 12
+pairwise rows: 13800
+seed comparisons: 2400
+language comparisons: 11400
+
+=== RAW HEATMAP MAE ===
+mean seed:             0.005047
+mean language:         0.013954
+language - seed:       +0.008908
+language / seed:       2.765028
+language > seed cases: 12 / 12
+
+=== RAW HEATMAP CORRELATION DISTANCE ===
+mean seed:             0.009742
+mean language:         0.076844
+language - seed:       +0.067102
+language / seed:       7.887854
+language > seed cases: 12 / 12
+
+=== BOX INSTABILITY (1-IoU) ===
+mean seed:             0.162530
+mean language:         0.352692
+language - seed:       +0.190162
+language / seed:       2.170011
+language > seed cases: 12 / 12
+
+=== BY RISK REGION ===
+risk_region  n_cases  frozen_risk_mean  heatmap_mae_seed  heatmap_mae_language  heatmap_corr_distance_seed  heatmap_corr_distance_language  box_instability_seed  box_instability_language
+       HIGH        4          0.612178          0.007192              0.018115                    0.016224                        0.109646              0.298140                  0.601446
+        LOW        4          0.133240          0.003029              0.009088                    0.004612                        0.043470              0.051554                  0.144836
+     MIDDLE        4          0.322786          0.004919              0.014660                    0.008391                        0.077415              0.137896                  0.311794
+
+=== CASE TABLE ===
+risk_region                      filename  frozen_risk  heatmap_mae_seed  heatmap_mae_language  heatmap_mae_language_minus_seed  heatmap_corr_distance_seed  heatmap_corr_distance_language  heatmap_corr_distance_language_minus_seed  box_instability_seed  box_instability_language  box_instability_language_minus_seed
+       HIGH 1166_pid-105936_pituitary.png     0.830520          0.009822              0.017990                         0.008168                    0.036072                        0.112719                                   0.076647              0.552139                  0.784538                             0.232400
+       HIGH 2649_pid-MR053241C_glioma.png     0.465255          0.005351              0.015385                         0.010034                    0.008976                        0.106972                                   0.097996              0.158161                  0.460758                             0.302597
+       HIGH 2733_pid-MR029209E_glioma.png     0.623499          0.003915              0.013578                         0.009663                    0.004863                        0.080221                                   0.075358              0.243887                  0.683231                             0.439344
+       HIGH  2809_pid-MR033420_glioma.png     0.529438          0.009682              0.025506                         0.015824                    0.014983                        0.138672                                   0.123689              0.238371                  0.477255                             0.238883
+        LOW  1418_pid-98472_pituitary.png     0.127909          0.002677              0.007384                         0.004707                    0.007119                        0.051862                                   0.044743              0.060677                  0.165094                             0.104417
+        LOW  1865_pid-MR048944_glioma.png     0.206366          0.003358              0.011473                         0.008114                    0.003400                        0.040728                                   0.037327              0.059387                  0.191800                             0.132413
+        LOW 2086_pid-MR047953C_glioma.png     0.166984          0.004543              0.013249                         0.008707                    0.005639                        0.067104                                   0.061466              0.064922                  0.184875                             0.119953
+        LOW 464_pid-101127_meningioma.png     0.031702          0.001536              0.004247                         0.002711                    0.002288                        0.014187                                   0.011899              0.021229                  0.037575                             0.016346
+     MIDDLE 1125_pid-111785_pituitary.png     0.257896          0.004063              0.011668                         0.007605                    0.009570                        0.066442                                   0.056872              0.075321                  0.202457                             0.127136
+     MIDDLE  2338_pid-MR051461_glioma.png     0.338722          0.006258              0.018237                         0.011979                    0.009882                        0.085889                                   0.076007              0.202779                  0.409323                             0.206543
+     MIDDLE 252_pid-102935_meningioma.png     0.391867          0.004082              0.010538                         0.006456                    0.005025                        0.048221                                   0.043195              0.188898                  0.319544                             0.130646
+     MIDDLE  2935_pid-MR051644_glioma.png     0.302658          0.005273              0.018196                         0.012923                    0.009087                        0.109109                                   0.100022              0.084587                  0.315852                             0.231265
+
+DEVELOPMENT DIAGNOSTIC ONLY: YES
+GROUND TRUTH USED: NO
+DICE OUTCOMES USED: NO
+HELDOUT OUTCOMES ACCESSED: NO
+METHOD/THRESHOLD TUNING: NO
+PAIRWISE ROWS TREATED AS INDEPENDENT INFERENCE: NO
+
+saved: /home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/remedy/results/stochastic_mechanism/heatmap_pairwise_mechanism.csv
+saved: /home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/remedy/results/stochastic_mechanism/case_mechanism_summary.csv
+saved: /home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/remedy/results/stochastic_mechanism/region_mechanism_summary.csv
+saved: /home/hpc/rlvl/rlvl178v/prl_medclipsam/beyond-average-dice/remedy/results/stochastic_mechanism/mechanism_analysis.txt

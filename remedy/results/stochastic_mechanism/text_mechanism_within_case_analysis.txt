@@ -1,0 +1,52 @@
+=== TEXT DISTANCE -> LOCALIZATION WITHIN IMAGE ===
+cases: 12
+language comparisons: 11400
+comparisons per case: 950
+
+=== heatmap_mae ===
+mean within-case Pearson:  0.658777
+median within-case Pearson:0.656244
+positive Pearson cases:    12 / 12
+mean within-case Spearman: 0.645438
+median within-case Spearman:0.628552
+positive Spearman cases:   12 / 12
+
+=== heatmap_corr_distance ===
+mean within-case Pearson:  0.615998
+median within-case Pearson:0.634340
+positive Pearson cases:    12 / 12
+mean within-case Spearman: 0.623674
+median within-case Spearman:0.608552
+positive Spearman cases:   12 / 12
+
+=== box_instability ===
+mean within-case Pearson:  0.209800
+median within-case Pearson:0.152742
+positive Pearson cases:    10 / 12
+mean within-case Spearman: 0.249298
+median within-case Spearman:0.254069
+positive Spearman cases:   11 / 12
+
+=== CASE TABLE ===
+                     filename risk_region  frozen_risk  n_comparisons  heatmap_mae_pearson  heatmap_mae_spearman  heatmap_corr_distance_pearson  heatmap_corr_distance_spearman  box_instability_pearson  box_instability_spearman
+1125_pid-111785_pituitary.png      MIDDLE     0.257896            950             0.692666              0.678128                       0.696398                        0.682207                 0.545257                  0.474401
+1166_pid-105936_pituitary.png        HIGH     0.830520            950             0.618035              0.578736                       0.385883                        0.464068                 0.125640                  0.133471
+ 1418_pid-98472_pituitary.png         LOW     0.127909            950             0.654500              0.696832                       0.386787                        0.470625                 0.021696                  0.058439
+ 1865_pid-MR048944_glioma.png         LOW     0.206366            950             0.626795              0.555074                       0.529854                        0.544977                 0.402651                  0.412544
+2086_pid-MR047953C_glioma.png         LOW     0.166984            950             0.800041              0.783635                       0.804472                        0.809897                 0.629016                  0.542672
+ 2338_pid-MR051461_glioma.png      MIDDLE     0.338722            950             0.579515              0.625652                       0.741817                        0.728936                 0.202003                  0.265536
+252_pid-102935_meningioma.png      MIDDLE     0.391867            950             0.727130              0.704880                       0.598026                        0.605229                -0.016108                  0.242603
+2649_pid-MR053241C_glioma.png        HIGH     0.465255            950             0.569194              0.569223                       0.616194                        0.611874                 0.179844                  0.335052
+2733_pid-MR029209E_glioma.png        HIGH     0.623499            950             0.717571              0.700617                       0.499907                        0.529839                -0.054863                 -0.042244
+ 2809_pid-MR033420_glioma.png        HIGH     0.529438            950             0.668685              0.608797                       0.770766                        0.740051                 0.100792                  0.223991
+ 2935_pid-MR051644_glioma.png      MIDDLE     0.302658            950             0.593208              0.612231                       0.709380                        0.717979                 0.308622                  0.319702
+464_pid-101127_meningioma.png         LOW     0.031702            950             0.657988              0.631453                       0.652487                        0.578401                 0.073053                  0.025404
+
+DEVELOPMENT DIAGNOSTIC ONLY: YES
+GROUND TRUTH USED: NO
+DICE OUTCOMES USED: NO
+HELDOUT OUTCOMES ACCESSED: NO
+METHOD/THRESHOLD TUNING: NO
+PAIRWISE ROWS TREATED AS INDEPENDENT INFERENCE: NO
+
+INTERPRETATION TARGET: determine whether the association between text-representation distance and localization change recurs within individual images rather than arising only after aggregation.

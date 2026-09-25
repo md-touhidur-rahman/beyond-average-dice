@@ -1,0 +1,41 @@
+=== TEXT REPRESENTATION -> LOCALIZATION MECHANISM ===
+unique prompt pairs: 190
+underlying language comparisons: 11400
+
+=== heatmap_mae_mean ===
+Pearson r:  0.885100
+Spearman r: 0.865843
+
+=== heatmap_corr_distance_mean ===
+Pearson r:  0.877045
+Spearman r: 0.859763
+
+=== box_instability_mean ===
+Pearson r:  0.573518
+Spearman r: 0.566431
+
+=== TEXT DISTANCE DISTRIBUTION ===
+count    190.000000
+mean       0.072558
+std        0.035464
+min        0.012592
+25%        0.048112
+50%        0.068694
+75%        0.094539
+max        0.220498
+
+=== OUTCOMES BY TEXT-DISTANCE QUARTILE ===
+                        heatmap_mae_mean  heatmap_corr_distance_mean  box_instability_mean
+text_distance_quartile                                                                    
+Q1_nearest                      0.009762                    0.038863              0.295681
+Q2                              0.012977                    0.068542              0.341512
+Q3                              0.014464                    0.082099              0.366724
+Q4_farthest                     0.018605                    0.117809              0.406909
+
+DEVELOPMENT DIAGNOSTIC ONLY: YES
+GROUND TRUTH USED: NO
+DICE OUTCOMES USED: NO
+HELDOUT OUTCOMES ACCESSED: NO
+METHOD/THRESHOLD TUNING: NO
+PROMPT TAXONOMY INVENTED POST-HOC: NO
+190 PROMPT PAIRS TREATED AS INDEPENDENT INFERENCE: NO

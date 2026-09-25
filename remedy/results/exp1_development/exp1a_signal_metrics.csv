@@ -1,0 +1,5 @@
+candidate_order,signal,column,n,auprc,auroc
+0,1_minus_mean_pairwise_iou,signal_1_minus_mean_iou,268,0.4776789884959616,0.6843889272487603
+2,center_dispersion,signal_center_dispersion,268,0.47039669471065143,0.7297093716653067
+3,area_dispersion,signal_area_dispersion,268,0.43281820039854746,0.6167221141171302
+1,1_minus_median_pairwise_iou,signal_1_minus_median_iou,268,0.3889930732177795,0.5656581507752182

@@ -1,0 +1,52 @@
+=== TEXT DISTANCE -> LOCALIZATION: SEED-COLLAPSED WITHIN IMAGE ===
+cases: 12
+unique prompt pairs per case: 190
+case-prompt-pair observations: 2280
+five matched seed realizations averaged before correlation
+
+=== heatmap_mae ===
+mean Pearson:    0.675938
+median Pearson:  0.666794
+positive cases:  12 / 12
+mean Spearman:   0.659662
+median Spearman: 0.636051
+positive cases:  12 / 12
+
+=== heatmap_corr_distance ===
+mean Pearson:    0.627564
+median Pearson:  0.641488
+positive cases:  12 / 12
+mean Spearman:   0.635215
+median Spearman: 0.614639
+positive cases:  12 / 12
+
+=== box_instability ===
+mean Pearson:    0.239864
+median Pearson:  0.203815
+positive cases:  10 / 12
+mean Spearman:   0.263665
+median Spearman: 0.290429
+positive cases:  11 / 12
+
+=== CASE TABLE ===
+                     filename risk_region  frozen_risk  n_unique_prompt_pairs  heatmap_mae_pearson  heatmap_mae_spearman  heatmap_corr_distance_pearson  heatmap_corr_distance_spearman  box_instability_pearson  box_instability_spearman
+1125_pid-111785_pituitary.png      MIDDLE     0.257896                    190             0.704357              0.682751                       0.710553                        0.694932                 0.614000                  0.577301
+1166_pid-105936_pituitary.png        HIGH     0.830520                    190             0.660132              0.614011                       0.412339                        0.500475                 0.201574                  0.271458
+ 1418_pid-98472_pituitary.png         LOW     0.127909                    190             0.672572              0.715930                       0.416231                        0.492546                 0.024686                  0.078548
+ 1865_pid-MR048944_glioma.png         LOW     0.206366                    190             0.639902              0.565542                       0.537179                        0.552602                 0.420172                  0.433845
+2086_pid-MR047953C_glioma.png         LOW     0.166984                    190             0.819366              0.799264                       0.816966                        0.820439                 0.681356                  0.582055
+ 2338_pid-MR051461_glioma.png      MIDDLE     0.338722                    190             0.588309              0.633622                       0.747862                        0.735023                 0.249812                  0.338439
+252_pid-102935_meningioma.png      MIDDLE     0.391867                    190             0.741845              0.720721                       0.606773                        0.613465                -0.021427                  0.068915
+2649_pid-MR053241C_glioma.png        HIGH     0.465255                    190             0.585675              0.577060                       0.624176                        0.615813                 0.206056                  0.309400
+2733_pid-MR029209E_glioma.png        HIGH     0.623499                    190             0.727617              0.709760                       0.504213                        0.533768                -0.067403                 -0.048597
+ 2809_pid-MR033420_glioma.png        HIGH     0.529438                    190             0.703101              0.637208                       0.781234                        0.750675                 0.129544                  0.155111
+ 2935_pid-MR051644_glioma.png      MIDDLE     0.302658                    190             0.607366              0.625185                       0.714446                        0.727133                 0.336380                  0.347848
+464_pid-101127_meningioma.png         LOW     0.031702                    190             0.661017              0.634894                       0.658801                        0.585702                 0.103618                  0.049655
+
+DEVELOPMENT DIAGNOSTIC ONLY: YES
+GROUND TRUTH USED: NO
+DICE OUTCOMES USED: NO
+HELDOUT OUTCOMES ACCESSED: NO
+METHOD/THRESHOLD TUNING: NO
+SEED REALIZATIONS COLLAPSED BEFORE ASSOCIATION: YES
+UNIQUE PROMPT PAIRS TREATED AS INDEPENDENT FORMAL INFERENCE: NO

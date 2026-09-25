@@ -1,0 +1,164 @@
+BEYOND AVERAGE DICE — BRAIN600 CROSS-REGIME STRESS TEST
+Date: 2026-09-22
+
+ROLE
+Brain600 is a separate cross-regime stress test / boundary-transfer analysis.
+It is not used for method selection, threshold tuning, or Brain400
+confirmatory validation.
+
+REGIME
+600 Brain images.
+Six controlled language conditions:
+H0, H1, H2, L3, L4, L5.
+
+This differs from the Brain400 P20 / SAM-B multimask setting.
+Brain600 uses the controlled six-condition regime and SAM-H single-mask
+setting.
+
+Patient correspondence is unavailable and is not assumed.
+
+FROZEN METHOD
+Risk score:
+1 - mean pairwise IoU among description-specific localization boxes.
+
+With six descriptions, the score uses all 15 pairwise localization-box IoUs.
+
+Brain400-frozen threshold:
+0.264446087201
+
+The threshold was not modified using Brain600.
+
+PROVENANCE CHECK
+All six localization directories contained 600 cases.
+Common cases: 600.
+Empty localizations: 0 for every condition.
+
+Reconstructed H0-relative box IoUs reproduced the frozen Brain600 analysis
+to maximum absolute error 1.11022302463e-16 for every tested condition.
+
+Frozen risk-signal CSV SHA256:
+828ab6b07d44daa945b5bb63b85e3bc06467df76730a395694e489aedbce279c
+
+TARGET
+Catastrophic slice:
+at least one description Dice < 0.10 AND
+at least one description Dice >= 0.50.
+
+Catastrophic slices:
+38 / 600 = 6.333%.
+
+DETECTION
+AUPRC:
+0.464094
+
+AUROC:
+0.898577
+
+Frozen-threshold confusion matrix:
+TP = 27
+FP = 56
+TN = 506
+FN = 11
+
+Sensitivity:
+0.710526
+
+Specificity:
+0.900356
+
+PPV:
+0.325301
+
+NPV:
+0.978723
+
+Flagged:
+83 / 600 = 13.833%
+
+CATASTROPHIC ENRICHMENT
+Overall catastrophic prevalence:
+0.063333
+
+Flagged catastrophic prevalence:
+0.325301
+
+Retained catastrophic prevalence:
+0.021277
+
+Catastrophic cases captured:
+27 / 38 = 0.710526
+
+H0 FAILURE ENRICHMENT
+Overall H0 Dice < 0.10:
+0.033333
+
+Flagged H0 Dice < 0.10:
+0.132530
+
+Retained H0 Dice < 0.10:
+0.017408
+
+H0 failures captured:
+11 / 20
+
+SELECTIVE RELIABILITY
+Overall H0 mean Dice:
+0.753830
+
+Flagged H0 mean Dice:
+0.636308
+
+Retained H0 mean Dice:
+0.772697
+
+DESCRIPTIVE RISK-COVERAGE
+At 80% coverage:
+retained H0 mean Dice = 0.778628
+retained H0 Dice < 0.10 rate = 0.014583
+retained catastrophic rate = 0.012500
+
+At 60% coverage:
+retained H0 mean Dice = 0.787529
+retained H0 Dice < 0.10 rate = 0.011111
+retained catastrophic rate = 0.008333
+
+INTERPRETATION
+The frozen cross-description localization-disagreement score transferred
+across a different language regime and SAM setting as a useful risk-ranking
+signal.
+
+At the Brain400-frozen threshold, Brain600 high-risk cases were substantially
+enriched for catastrophic variation, while retained cases had substantially
+lower catastrophic prevalence.
+
+The operating characteristics did not transfer identically: sensitivity was
+0.710526 rather than the approximately 0.80 development target.
+
+This result does not establish:
+- universal failure detection;
+- that disagreement proves an individual prediction is wrong;
+- that agreement proves correctness;
+- automatic correction of failed segmentations;
+- clinical utility;
+- architecture-level causality.
+
+Brain600 remains a stress test / boundary condition rather than independent
+patient-level confirmatory validation.
+
+NO BRAIN600 TUNING
+Brain600 was not used to:
+- select the risk score;
+- select the threshold;
+- modify the catastrophic definition;
+- choose the primary Brain400 endpoint;
+- tune a replacement localization strategy.
+
+RESULT HASHES
+brain600_stress_results.csv
+dd2420354e48852f78108401079f6eb798fa733ef2e5fdcc7bb2153d484b7c30
+
+brain600_risk_coverage.csv
+26046531f9d79061d7842c593c24fdfb49916df4b356fe11137d1dce9a2be273
+
+brain600_stress_summary.json
+8b74cca2b8b4cc476a02db2140810f38a928cb5426ff184576cb7b7c8084e279

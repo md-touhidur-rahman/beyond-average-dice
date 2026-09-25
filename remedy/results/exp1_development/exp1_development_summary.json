@@ -1,0 +1,39 @@
+{
+  "data_guard": {
+    "split": "development_only",
+    "patients": 121,
+    "slices": 268,
+    "catastrophic_slices": 89
+  },
+  "exp1a": {
+    "selected_signal": "1_minus_mean_pairwise_iou",
+    "selected_column": "signal_1_minus_mean_iou",
+    "auprc": 0.4776789884959616,
+    "auroc": 0.6843889272487603,
+    "gate_threshold": 0.2644460872009179,
+    "gate_rule": "sensitivity>=0.80_then_max_specificity",
+    "gate_sensitivity": 0.8089887640449438,
+    "gate_specificity": 0.4804469273743017
+  },
+  "exp1b": {
+    "catastrophic_slices_evaluated": 89,
+    "mean_medoid_regret": 0.2008173583921115,
+    "mean_medoid_regret_ci95": [
+      0.14252397299654535,
+      0.2650000251282098
+    ],
+    "mean_random_expected_regret": 0.27852877285651734,
+    "mean_random_expected_regret_ci95": [
+      0.2355024305039972,
+      0.3243891058336484
+    ],
+    "mean_medoid_minus_random_regret": -0.07771141446440577,
+    "mean_medoid_minus_random_regret_ci95": [
+      -0.1065827559681131,
+      -0.0494443834139701
+    ],
+    "medoid_top1_oracle_hit_rate": 0.0449438202247191,
+    "medoid_ties_all_development": 120,
+    "cases_lt3_valid_boxes": 0
+  }
+}

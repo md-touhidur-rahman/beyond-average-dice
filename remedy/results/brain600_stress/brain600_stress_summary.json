@@ -1,0 +1,21 @@
+{
+  "n": 600,
+  "catastrophic_slices": 38,
+  "catastrophic_prevalence": 0.06333333333333334,
+  "brain400_frozen_threshold": 0.2644460872009179,
+  "auprc": 0.464094161729064,
+  "auroc": 0.8985765124555161,
+  "tp": 27,
+  "fp": 56,
+  "tn": 506,
+  "fn": 11,
+  "sensitivity": 0.7105263157894737,
+  "specificity": 0.900355871886121,
+  "ppv": 0.3253012048192771,
+  "npv": 0.9787234042553191,
+  "flagged_n": 83,
+  "flagged_fraction": 0.13833333333333334,
+  "catastrophic_captured": 27,
+  "H0_failures_total": 20,
+  "H0_failures_captured": 11
+}

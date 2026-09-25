@@ -1,0 +1,79 @@
+{
+  "heldout_guard": {
+    "patients": 53,
+    "slices": 132,
+    "catastrophic_slices": 43
+  },
+  "frozen_method": {
+    "risk": "1_minus_mean_pairwise_box_iou",
+    "threshold": 0.264446087201,
+    "baseline": "P14"
+  },
+  "primary": {
+    "auprc": 0.3734619913873144
+  },
+  "secondary": {
+    "auroc": 0.5845309642017246,
+    "tp": 34,
+    "fp": 57,
+    "tn": 32,
+    "fn": 9,
+    "sensitivity": 0.7906976744186046,
+    "specificity": 0.3595505617977528,
+    "ppv": 0.37362637362637363,
+    "npv": 0.7804878048780488,
+    "flagged_fraction": 0.6893939393939394,
+    "overall_P14_mean_dice": 0.47726134105388435,
+    "overall_P14_failure_rate_lt_.10": 0.3409090909090909,
+    "retained_P14_mean_dice": 0.6295270698267056,
+    "retained_P14_median_dice": 0.7781472684085511,
+    "retained_P14_failure_rate_lt_.10": 0.1951219512195122,
+    "flagged_P14_failure_rate_lt_.10": 0.4065934065934066,
+    "flagged_catastrophic_prevalence": 0.37362637362637363,
+    "retained_catastrophic_prevalence": 0.21951219512195122,
+    "fraction_catastrophic_captured": 0.7906976744186046,
+    "fraction_P14_failures_captured": 0.8222222222222222
+  },
+  "bootstrap_ci95": {
+    "auprc": [
+      0.2602153818193073,
+      0.5360400871756704
+    ],
+    "auroc": [
+      0.4773797328434425,
+      0.6864143829222247
+    ],
+    "sensitivity": [
+      0.65,
+      0.9024390243902439
+    ],
+    "specificity": [
+      0.2564102564102564,
+      0.4691358024691358
+    ],
+    "flagged_fraction": [
+      0.6015037593984962,
+      0.7686567164179104
+    ],
+    "retained_P14_mean_dice": [
+      0.5122730226492179,
+      0.7362127690620128
+    ],
+    "retained_P14_failure_rate_lt_.10": [
+      0.08509736747205193,
+      0.3333333333333333
+    ],
+    "flagged_P14_failure_rate_lt_.10": [
+      0.3013698630136986,
+      0.50495299529953
+    ],
+    "flagged_catastrophic_prevalence": [
+      0.2550970388155262,
+      0.4945084485407066
+    ],
+    "retained_catastrophic_prevalence": [
+      0.1,
+      0.35714285714285715
+    ]
+  }
+}

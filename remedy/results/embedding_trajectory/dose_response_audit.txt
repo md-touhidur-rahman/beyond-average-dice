@@ -1,0 +1,84 @@
+=== EMBEDDING INTERPOLATION DOSE-RESPONSE AUDIT ===
+
+POST-HOC DESCRIPTIVE SHAPE AUDIT OF THE PRE-SPECIFIED MECHANISM RESULT
+
+This audit does NOT redefine the frozen primary endpoint.
+Its purpose is to expose the raw response magnitude at each of the five pre-specified interpolation doses.
+
+=== RAW OBSERVATIONS BY DOSE ===
+1200 observations per dose; descriptive only, not independent inferential replicates.
+
+alpha = 0.00
+  corr distance from A: mean=0.000000000 median=0.000000000 IQR=[0.000000000, 0.000000000]
+  corr distance from B: mean=0.078567944 median=0.062506187 IQR=[0.031792726, 0.101323195]
+  heatmap MAE from A:   mean=0.000000000 median=0.000000000 IQR=[0.000000000, 0.000000000]
+  heatmap MAE from B:   mean=0.013860700 median=0.012404059 IQR=[0.008091707, 0.017627834]
+
+alpha = 0.25
+  corr distance from A: mean=0.006926699 median=0.004438518 IQR=[0.002080553, 0.008026977]
+  corr distance from B: mean=0.048731054 median=0.037463930 IQR=[0.017636646, 0.063032446]
+  heatmap MAE from A:   mean=0.004112278 median=0.003535575 IQR=[0.002257158, 0.005187323]
+  heatmap MAE from B:   mean=0.010859348 median=0.009628708 IQR=[0.006084129, 0.013808137]
+
+alpha = 0.50
+  corr distance from A: mean=0.025149206 median=0.016783874 IQR=[0.008348836, 0.030243085]
+  corr distance from B: mean=0.023087406 median=0.016906093 IQR=[0.008086530, 0.030369724]
+  heatmap MAE from A:   mean=0.007868491 median=0.006786062 IQR=[0.004384861, 0.010109234]
+  heatmap MAE from B:   mean=0.007488412 median=0.006420746 IQR=[0.004263058, 0.009583760]
+
+alpha = 0.75
+  corr distance from A: mean=0.051098695 median=0.036521865 IQR=[0.018963340, 0.063823495]
+  corr distance from B: mean=0.005738253 median=0.004154224 IQR=[0.001965267, 0.007341297]
+  heatmap MAE from A:   mean=0.011129943 median=0.009669799 IQR=[0.006393846, 0.014367860]
+  heatmap MAE from B:   mean=0.003751160 median=0.003234385 IQR=[0.002238970, 0.004536444]
+
+alpha = 1.00
+  corr distance from A: mean=0.078567944 median=0.062506187 IQR=[0.031792726, 0.101323195]
+  corr distance from B: mean=0.000000000 median=0.000000000 IQR=[0.000000000, 0.000000000]
+  heatmap MAE from A:   mean=0.013860700 median=0.012404059 IQR=[0.008091707, 0.017627834]
+  heatmap MAE from B:   mean=0.000000000 median=0.000000000 IQR=[0.000000000, 0.000000000]
+
+=== CASE-LEVEL MEANS BY DOSE ===
+Each value below first averages the 20 prompt pairs x 5 matched seeds within a case.
+
+      corr_distance_from_A                               corr_distance_from_B                               heatmap_mae_from_A                               heatmap_mae_from_B                              
+                      mean    median       min       max                 mean    median       min       max               mean    median       min       max               mean    median       min       max
+alpha                                                                                                                                                                                                        
+0.00              0.000000  0.000000  0.000000  0.000000             0.078568  0.072892  0.013032  0.149689           0.000000  0.000000  0.000000  0.000000           0.013861  0.013544  0.003862  0.024943
+0.25              0.006927  0.006519  0.001462  0.016978             0.048731  0.043696  0.008547  0.093924           0.004112  0.003869  0.001435  0.007343           0.010859  0.010342  0.002899  0.019940
+0.50              0.025149  0.022972  0.004726  0.048546             0.023087  0.022182  0.004749  0.042702           0.007868  0.007661  0.002464  0.014085           0.007488  0.006960  0.002069  0.013683
+0.75              0.051099  0.045436  0.007954  0.099425             0.005738  0.005441  0.001700  0.009303           0.011130  0.010758  0.003103  0.019906           0.003751  0.003539  0.001263  0.006736
+1.00              0.078568  0.072892  0.013032  0.149689             0.000000  0.000000  0.000000  0.000000           0.013861  0.013544  0.003862  0.024943           0.000000  0.000000  0.000000  0.000000
+
+=== CASE-LEVEL STEP INCREMENTS: CORR DISTANCE FROM A ===
+Mean change across the 12 case-level dose curves.
+to alpha=0.25: mean increment=0.006926699, median=0.006519209, positive cases=12/12
+to alpha=0.50: mean increment=0.018222507, median=0.016671889, positive cases=12/12
+to alpha=0.75: mean increment=0.025949490, median=0.023173054, positive cases=12/12
+to alpha=1.00: mean increment=0.027469249, median=0.027276039, positive cases=12/12
+
+=== CASE-LEVEL STEP INCREMENTS: HEATMAP MAE FROM A ===
+to alpha=0.25: mean increment=0.004112278, median=0.003869338, positive cases=12/12
+to alpha=0.50: mean increment=0.003756213, median=0.003715974, positive cases=12/12
+to alpha=0.75: mean increment=0.003261452, median=0.003147858, positive cases=12/12
+to alpha=1.00: mean increment=0.002730757, median=0.002662649, positive cases=12/12
+
+=== PRIMARY CASE-LEVEL DIRECTIONAL TEST ===
+positive case means: 12 / 12
+zero case means:     0 / 12
+negative case means: 0 / 12
+exact two-sided sign-test p: 0.00048828125
+
+=== INTERPRETIVE RESTRICTIONS ===
+The five interpolation doses provide five ordered observations per trajectory.
+Accordingly, perfect Spearman ordering is a coarse five-point ordering criterion and is not interpreted as high-resolution evidence of linearity.
+Response shape is assessed from the raw dose magnitudes and case-level dose curves, not from Spearman rho alone.
+Endpoint progress is mathematically coupled to distances from A and B and is treated as a manipulation-validity / trajectory sanity check rather than independent mechanistic evidence.
+
+DEVELOPMENT DIAGNOSTIC ONLY: YES
+GROUND TRUTH USED: NO
+DICE OUTCOMES USED: NO
+HELDOUT OUTCOMES ACCESSED: NO
+PRIMARY ENDPOINT REDEFINED: NO
+FROZEN ANALYSIS PLAN MODIFIED: NO
+1200 TRAJECTORIES USED AS INDEPENDENT INFERENCE: NO

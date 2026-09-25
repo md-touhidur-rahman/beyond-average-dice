@@ -1,0 +1,71 @@
+=== EMBEDDING INTERPOLATION -> LOCALIZATION ===
+PRE-SPECIFIED ANALYSIS OF FROZEN MECHANISM RUN
+
+rows: 6000
+trajectories: 1200
+case-prompt-pair summaries: 240
+cases: 12
+
+=== PRIMARY: CORRELATION DISTANCE FROM A ===
+successfully evaluated: 1200 / 1200
+mean Spearman:   0.999250
+median Spearman: 1.000000
+IQR:             [1.000000, 1.000000]
+range:           [0.900000, 1.000000]
+positive:        1200 / 1200 (100.000%)
+zero:            0 / 1200 (0.000%)
+negative:        0 / 1200 (0.000%)
+fully non-decreasing: 1191 / 1200 (99.250%)
+
+=== SECONDARY: HEATMAP MAE FROM A ===
+mean Spearman:   0.994583
+median Spearman: 1.000000
+positive:        1200 / 1200 (100.000%)
+fully non-decreasing: 1150 / 1200 (95.833%)
+
+=== SECONDARY: BOX INSTABILITY FROM A ===
+mean Spearman:   0.831874
+median Spearman: 0.948683
+positive:        1155 / 1200 (96.250%)
+fully non-decreasing: 961 / 1200 (80.083%)
+
+=== SYMMETRIC CHECK: CORRELATION DISTANCE FROM B ===
+mean Spearman:   -0.998333
+median Spearman: -1.000000
+negative:        1200 / 1200 (100.000%)
+fully non-increasing: 1195 / 1200 (99.583%)
+
+=== SECONDARY: ENDPOINT PROGRESS ===
+fully finite trajectories: 1200 / 1200
+mean Spearman:   1.000000
+median Spearman: 1.000000
+positive:        1200 / 1200 (100.000%)
+fully non-decreasing: 1200 / 1200 (100.000%)
+
+=== CASE-LEVEL PRIMARY REPLICATION ===
+                     filename risk_region  frozen_risk  n_trajectories  corr_A_spearman_mean  corr_A_spearman_median  corr_A_positive_fraction  corr_A_nondecreasing_fraction  corr_B_spearman_mean  mae_A_spearman_mean  box_A_spearman_mean  progress_spearman_mean
+1125_pid-111785_pituitary.png      MIDDLE     0.257896             100                 1.000                     1.0                       1.0                           1.00                 -1.00                1.000             0.824758                     1.0
+1166_pid-105936_pituitary.png        HIGH     0.830520             100                 0.995                     1.0                       1.0                           0.95                 -0.98                0.992             0.759210                     1.0
+ 1418_pid-98472_pituitary.png         LOW     0.127909             100                 1.000                     1.0                       1.0                           1.00                 -1.00                1.000             0.784173                     1.0
+ 1865_pid-MR048944_glioma.png         LOW     0.206366             100                 1.000                     1.0                       1.0                           1.00                 -1.00                0.983             0.948901                     1.0
+2086_pid-MR047953C_glioma.png         LOW     0.166984             100                 1.000                     1.0                       1.0                           1.00                 -1.00                1.000             0.900423                     1.0
+ 2338_pid-MR051461_glioma.png      MIDDLE     0.338722             100                 1.000                     1.0                       1.0                           1.00                 -1.00                1.000             0.903779                     1.0
+252_pid-102935_meningioma.png      MIDDLE     0.391867             100                 1.000                     1.0                       1.0                           1.00                 -1.00                0.997             0.916082                     1.0
+2649_pid-MR053241C_glioma.png        HIGH     0.465255             100                 1.000                     1.0                       1.0                           1.00                 -1.00                0.985             0.770209                     1.0
+2733_pid-MR029209E_glioma.png        HIGH     0.623499             100                 1.000                     1.0                       1.0                           1.00                 -1.00                1.000             0.869062                     1.0
+ 2809_pid-MR033420_glioma.png        HIGH     0.529438             100                 1.000                     1.0                       1.0                           1.00                 -1.00                1.000             0.896456                     1.0
+ 2935_pid-MR051644_glioma.png      MIDDLE     0.302658             100                 1.000                     1.0                       1.0                           1.00                 -1.00                0.994             0.963271                     1.0
+464_pid-101127_meningioma.png         LOW     0.031702             100                 0.996                     1.0                       1.0                           0.96                 -1.00                0.984             0.446160                     1.0
+
+=== CASE-LEVEL DIRECTION ===
+cases with positive mean primary Spearman: 12 / 12
+cases with negative mean B Spearman: 12 / 12
+cases with positive mean progress Spearman: 12 / 12
+
+DEVELOPMENT DIAGNOSTIC ONLY: YES
+GROUND TRUTH USED: NO
+DICE OUTCOMES USED: NO
+HELDOUT OUTCOMES ACCESSED: NO
+METHOD/THRESHOLD TUNING FROM TRAJECTORY OUTCOMES: NO
+RESULT-BASED TRAJECTORY EXCLUSION: NO
+1200 TRAJECTORIES TREATED AS INDEPENDENT FORMAL INFERENCE: NO

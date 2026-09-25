@@ -1,0 +1,18 @@
+JOB: 1820091
+STATE: COMPLETED
+EXIT: 0:0
+ROWS: 6000
+EXPECTED: 6000
+
+NOTE:
+This run generated all planned interpolation heatmaps but persisted
+bounding boxes and scalar heatmap summaries only. Raw heatmaps or
+pairwise heatmap-distance quantities required for the frozen PRIMARY
+endpoint were not persisted.
+
+No scientific trajectory outcome was inspected before this limitation
+was identified.
+
+The completed run remains usable for the pre-specified secondary
+bounding-box trajectory analysis, but it will not be substituted for
+the frozen primary raw-heatmap endpoint.

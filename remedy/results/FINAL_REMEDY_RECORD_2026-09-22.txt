@@ -1,0 +1,177 @@
+BEYOND AVERAGE DICE — REMEDY EXTENSION
+FINAL BRAIN400 RECORD
+Date: 2026-09-22
+
+ORIGINAL PROTOCOL SHA256
+333321b13041e5985d2f09b937dbd46ad6e9ef1df3f8d560d7d60d3552c0f1d0
+
+HELD-OUT FREEZE SHA256
+e20cd25d27ce81cea788c4130dbc9c2288952e51a78e38de18c6d83f78e1410f
+
+PARTITION
+Development: 121 patients, 268 slices
+Held-out: 53 patients, 132 slices
+No patient overlap.
+
+DEVELOPMENT — FAILURE RISK SIGNAL
+Selected GT-free signal:
+1 - mean pairwise IoU of description-specific localization boxes
+
+AUPRC: 0.477679
+AUROC: 0.684389
+
+Frozen threshold:
+0.264446087201
+
+Development sensitivity: 0.808989
+Development specificity: 0.480447
+
+DEVELOPMENT — PROMPT-LEVEL TRUST
+Catastrophic slices: 89
+
+Mean medoid regret:
+0.200817
+95% patient-cluster bootstrap CI:
+[0.142524, 0.265000]
+
+Mean random-description expected regret:
+0.278529
+
+Medoid minus random regret:
+-0.077711
+95% patient-cluster bootstrap CI:
+[-0.106583, -0.049444]
+
+Interpretation:
+Cross-description localization agreement contains information about relative
+description-specific localization quality.
+
+DEVELOPMENT — AUTOMATIC CORRECTION
+Consistency-gated medoid replacement failed.
+
+Fixed P14 mean Dice:
+0.475400
+
+Gated-medoid mean Dice:
+0.446724
+
+Difference:
+-0.028676
+
+Fixed P14 Dice < 0.10:
+34.701%
+
+Gated-medoid Dice < 0.10:
+37.687%
+
+Worst observed slice-level change:
+-0.944994
+
+This negative result is retained.
+
+HELD-OUT — PRIMARY ENDPOINT
+Patients: 53
+Slices: 132
+Catastrophic slices: 43
+
+AUPRC:
+0.373462
+
+95% patient-cluster bootstrap CI:
+[0.260215, 0.536040]
+
+HELD-OUT — SECONDARY DETECTION
+AUROC:
+0.584531
+
+95% patient-cluster bootstrap CI:
+[0.477380, 0.686414]
+
+Frozen-threshold confusion matrix:
+TP = 34
+FP = 57
+TN = 32
+FN = 9
+
+Sensitivity:
+0.790698
+95% CI:
+[0.650000, 0.902439]
+
+Specificity:
+0.359551
+95% CI:
+[0.256410, 0.469136]
+
+PPV:
+0.373626
+
+NPV:
+0.780488
+
+Flagged fraction:
+0.689394
+95% CI:
+[0.601504, 0.768657]
+
+HELD-OUT — SELECTIVE RELIABILITY
+Overall fixed-P14 mean Dice:
+0.477261
+
+Retained fixed-P14 mean Dice:
+0.629527
+95% CI:
+[0.512273, 0.736213]
+
+Overall P14 Dice < 0.10 rate:
+0.340909
+
+Retained P14 Dice < 0.10 rate:
+0.195122
+95% CI:
+[0.085097, 0.333333]
+
+Flagged P14 Dice < 0.10 rate:
+0.406593
+95% CI:
+[0.301370, 0.504953]
+
+Overall catastrophic prevalence:
+0.325758
+
+Flagged catastrophic prevalence:
+0.373626
+95% CI:
+[0.255097, 0.494508]
+
+Retained catastrophic prevalence:
+0.219512
+95% CI:
+[0.100000, 0.357143]
+
+Catastrophic slices captured:
+34 / 43 = 0.790698
+
+P14 Dice < 0.10 failures captured:
+37 / 45 = 0.822222
+
+INTERPRETATION BOUNDARY
+The held-out results support localization disagreement as an imperfect
+ground-truth-free risk signal and as a basis for selective reliability.
+
+They do not support describing the method as a strong binary failure
+classifier.
+
+They do not support automatic correction via medoid localization.
+
+The selective strategy incurs substantial abstention: 68.9% of held-out
+slices were flagged at the frozen operating threshold.
+
+No claim is made that agreement proves correctness, disagreement proves
+failure, flagged predictions would be corrected by human review, or that
+clinical utility has been established.
+
+NO FURTHER BRAIN400 METHOD TUNING
+The Brain400 held-out outcomes have now been opened. They must not be used
+to tune a replacement method and subsequently claim independent validation
+on the same patients.

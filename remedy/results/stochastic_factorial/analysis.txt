@@ -1,0 +1,43 @@
+=== FACTORIAL STOCHASTICITY DECOMPOSITION ===
+cases: 12
+raw runs: 1200
+seed-pair comparisons: 2400
+language-pair comparisons: 11400
+
+=== OVERALL CASE-LEVEL MEANS ===
+mean seed instability:     0.162530
+mean language instability: 0.352692
+language - seed:           +0.190162
+language / seed ratio:     2.170011
+language fraction combined: 0.684544
+
+=== CASEWISE DOMINANCE ===
+language > seed: 12 / 12
+seed > language: 0 / 12
+equal: 0
+
+=== BY RISK REGION ===
+risk_region  n_cases  frozen_risk_mean  seed_instability_mean  language_instability_mean  language_minus_seed_mean  language_to_seed_ratio_mean  language_fraction_mean
+     MIDDLE        4          0.322786               0.137896                   0.311794                  0.173897                     2.533039                0.703701
+       HIGH        4          0.612178               0.298140                   0.601446                  0.303306                     2.284424                0.683808
+        LOW        4          0.133240               0.051554                   0.144836                  0.093282                     2.642026                0.718476
+
+=== CASE TABLE ===
+risk_region                      filename  frozen_risk  seed_instability_mean  language_instability_mean  language_minus_seed  language_to_seed_ratio  language_fraction_of_combined
+     MIDDLE 1125_pid-111785_pituitary.png     0.257896               0.075321                   0.202457             0.127136                2.687929                       0.728845
+       HIGH 1166_pid-105936_pituitary.png     0.830520               0.552139                   0.784538             0.232400                1.420908                       0.586932
+        LOW  1418_pid-98472_pituitary.png     0.127909               0.060677                   0.165094             0.104417                2.720847                       0.731244
+        LOW  1865_pid-MR048944_glioma.png     0.206366               0.059387                   0.191800             0.132413                3.229640                       0.763573
+        LOW 2086_pid-MR047953C_glioma.png     0.166984               0.064922                   0.184875             0.119953                2.847656                       0.740101
+     MIDDLE  2338_pid-MR051461_glioma.png     0.338722               0.202779                   0.409323             0.206543                2.018561                       0.668716
+     MIDDLE 252_pid-102935_meningioma.png     0.391867               0.188898                   0.319544             0.130646                1.691622                       0.628477
+       HIGH 2649_pid-MR053241C_glioma.png     0.465255               0.158161                   0.460758             0.302597                2.913220                       0.744456
+       HIGH 2733_pid-MR029209E_glioma.png     0.623499               0.243887                   0.683231             0.439344                2.801420                       0.736940
+       HIGH  2809_pid-MR033420_glioma.png     0.529438               0.238371                   0.477255             0.238883                2.002148                       0.666905
+     MIDDLE  2935_pid-MR051644_glioma.png     0.302658               0.084587                   0.315852             0.231265                3.734046                       0.788764
+        LOW 464_pid-101127_meningioma.png     0.031702               0.021229                   0.037575             0.016346                1.769961                       0.638984
+
+DEVELOPMENT DIAGNOSTIC ONLY: YES
+GROUND TRUTH USED: NO
+HELDOUT OUTCOMES ACCESSED: NO
+METHOD/THRESHOLD TUNING: NO

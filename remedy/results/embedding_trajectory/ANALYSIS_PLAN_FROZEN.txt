@@ -1,0 +1,207 @@
+EMBEDDING-TRAJECTORY MECHANISM ANALYSIS PLAN
+============================================
+
+STATUS
+------
+PRE-SPECIFIED BEFORE INSPECTION OF THE SCIENTIFIC OUTPUT OF JOB 1820091.
+
+PURPOSE
+-------
+Test whether controlled interpolation between two projected text
+representations induces an ordered change in M2IB localization.
+
+This analysis is mechanistic and development-only.
+
+No ground truth, Dice outcomes, held-out outcomes, or outcome-based
+method/threshold tuning may be used.
+
+EXPERIMENTAL STRUCTURE
+----------------------
+Cases: 12 development cases
+Prompt pairs: 20 per case
+Seeds: 5 per case-prompt pair
+Interpolation doses: 0.00, 0.25, 0.50, 0.75, 1.00
+
+Planned trajectories:
+12 * 20 * 5 = 1200
+
+The five observations within a trajectory are NOT independent
+replicates.
+
+The 1200 trajectories are NOT to be treated as independent units
+for formal inference.
+
+PRIMARY ENDPOINT
+----------------
+Raw-heatmap correlation distance from endpoint A.
+
+For each trajectory define:
+
+    t = [0.00, 0.25, 0.50, 0.75, 1.00]
+
+and
+
+    D_A(t) = correlation_distance(H(t), H(0))
+
+The PRIMARY trajectory statistic is:
+
+    Spearman correlation between t and D_A(t)
+
+This metric is fixed before result inspection.
+
+PRIMARY DESCRIPTIVE SUMMARIES
+-----------------------------
+Across all 1200 planned trajectories report:
+
+1. number successfully evaluated
+2. mean trajectory-level Spearman rho
+3. median trajectory-level Spearman rho
+4. IQR and range of trajectory-level rho
+5. number and proportion with rho > 0
+6. number and proportion with rho = 0
+7. number and proportion with rho < 0
+8. number and proportion whose D_A sequence is non-decreasing
+   across all five interpolation doses
+
+No trajectory may be excluded because it is non-monotonic,
+unexpected, noisy, or weak.
+
+Only genuine technical failures such as missing/corrupt output or
+non-finite values may be excluded, and every such failure must be
+counted and reported.
+
+SECONDARY ENDPOINT 1
+--------------------
+Raw-heatmap MAE from endpoint A.
+
+Analyze using the same trajectory-level Spearman and monotonicity
+summaries as the primary endpoint.
+
+SECONDARY ENDPOINT 2
+--------------------
+Bounding-box instability from endpoint A, defined using 1-IoU.
+
+Analyze using the same trajectory-level summaries.
+
+This endpoint is downstream of heatmap generation and the
+heatmap-to-box discretization procedure and is therefore secondary.
+
+SYMMETRIC ENDPOINT-B CHECK
+--------------------------
+For the primary raw-heatmap correlation-distance metric also define:
+
+    D_B(t) = correlation_distance(H(t), H(1))
+
+Pre-specified expectation:
+
+    D_B(t) decreases as t increases.
+
+Report trajectory-level Spearman correlations between t and D_B(t).
+
+A negative association is the predicted direction.
+
+ENDPOINT-PROGRESS ANALYSIS
+--------------------------
+Pre-specified secondary mechanistic analysis:
+
+    P(t) = D_A(t) / [D_A(t) + D_B(t)]
+
+where the denominator is non-zero.
+
+Expected endpoint behavior:
+
+    P(0) = 0
+    P(1) = 1
+
+Evaluate whether P(t) increases with interpolation dose using
+trajectory-level Spearman correlation and report the complete
+distribution.
+
+This is explicitly SECONDARY, not the primary endpoint.
+
+HIERARCHICAL SUMMARIZATION
+--------------------------
+Raw trajectories must not be treated as independent inferential
+replicates.
+
+Summarize results hierarchically:
+
+Level 1:
+    1200 case x prompt-pair x seed trajectories
+
+Level 2:
+    240 case x prompt-pair summaries,
+    collapsing the five matched seed realizations
+
+Level 3:
+    12 case-level summaries
+
+The 12 development cases are the PRIMARY replication level for
+case-level interpretation/inference.
+
+The 240 case-prompt-pair observations may be reported as an
+intermediate descriptive level but will not replace the 12 cases
+as the primary replication level merely to increase apparent n.
+
+INTERPRETATION RULE
+-------------------
+No arbitrary numerical effect-size threshold is introduced after
+seeing the data.
+
+Interpretation will use the pre-specified directional structure.
+
+STRONG SUPPORT:
+Predominantly positive D_A trajectory associations, clearly positive
+central tendency, recurrence across cases, and corresponding negative
+D_B associations / positive endpoint-progress associations.
+
+MIXED SUPPORT:
+Positive overall directional behavior but substantial reproducible
+heterogeneity or non-monotonicity across cases/trajectories.
+
+NO SUPPORT FOR ORDERED MEDIATION:
+No consistent directional relationship between embedding interpolation
+and localization displacement.
+
+EVIDENCE AGAINST SIMPLE MONOTONIC MEDIATION:
+Substantial reproducible non-monotonic behavior incompatible with a
+simple ordered trajectory.
+
+NON-MONOTONIC TRAJECTORIES
+--------------------------
+Non-monotonic trajectories are scientific observations.
+
+They must:
+- remain in the analysis,
+- be counted,
+- have their proportion reported,
+- not be relabeled as noise merely because they violate expectation.
+
+FIGURE-SELECTION RULE
+---------------------
+No trajectory may be selected for a manuscript figure because it
+looks especially monotonic or visually compelling after inspection.
+
+Any qualitative trajectory illustration must use either:
+1. a rule fixed independently of trajectory appearance, or
+2. a presentation explicitly showing the distribution/range of
+   trajectory behaviors.
+
+INFERENCE RESTRICTION
+---------------------
+No p-value or confidence statement may treat the 1200 trajectories
+as 1200 independent experimental units.
+
+Any subsequent formal inferential procedure must preserve the
+clustered/case structure and will be clearly distinguished from the
+pre-specified descriptive trajectory analysis.
+
+LEAKAGE / DEVELOPMENT DECLARATION
+---------------------------------
+DEVELOPMENT DIAGNOSTIC ONLY: YES
+GROUND TRUTH USED: NO
+DICE OUTCOMES USED: NO
+HELDOUT OUTCOMES ACCESSED: NO
+METHOD/THRESHOLD TUNING FROM TRAJECTORY OUTCOMES: NO
+RESULT-BASED TRAJECTORY EXCLUSION: NO
+1200 TRAJECTORIES TREATED AS INDEPENDENT FORMAL INFERENCE: NO
